@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blacksmith.Sql.Queries", "Blacksmith.Sql.Queries\Blacksmith.Sql.Queries.csproj", "{D83EA7EB-9402-403B-A0E8-8480CEB5BBB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blacksmith.Sql.Queries.Tests", "Blacksmith.Sql.Queries.Tests\Blacksmith.Sql.Queries.Tests.csproj", "{8F75F36C-73D6-44B2-AD0B-A8F11BD6D41B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D83EA7EB-9402-403B-A0E8-8480CEB5BBB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D83EA7EB-9402-403B-A0E8-8480CEB5BBB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D83EA7EB-9402-403B-A0E8-8480CEB5BBB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D83EA7EB-9402-403B-A0E8-8480CEB5BBB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F75F36C-73D6-44B2-AD0B-A8F11BD6D41B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F75F36C-73D6-44B2-AD0B-A8F11BD6D41B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F75F36C-73D6-44B2-AD0B-A8F11BD6D41B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F75F36C-73D6-44B2-AD0B-A8F11BD6D41B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {241C18B2-0B65-48F1-A2A4-6E413F4CA901}
+	EndGlobalSection
+EndGlobal
