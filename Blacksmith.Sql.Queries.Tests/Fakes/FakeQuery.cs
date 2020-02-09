@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Text;
 
@@ -22,5 +23,10 @@ namespace Blacksmith.Sql.Queries.Tests
         public ICollection<string> Filters { get; }
         public ICollection<OrderClause> Order { get; }
         public Pagination Pagination { get; set; }
+
+        public IDbDataParameter createParameter()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
