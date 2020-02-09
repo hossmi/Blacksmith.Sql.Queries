@@ -4,14 +4,14 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <!--<RootNamespace>Blacksmith.Sql</RootNamespace>-->
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.0</Version>
+    <Version>1.1.0</Version>
     <SignAssembly>false</SignAssembly>
     <Description>Simple tool for building sql commands</Description>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <RunPostBuildEvent>OnOutputUpdated</RunPostBuildEvent>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
     <PackageProjectUrl>https://github.com/hossmi/Blacksmith.Sql.Queries</PackageProjectUrl>
     <RepositoryUrl>https://github.com/hossmi/Blacksmith.Sql.Queries</RepositoryUrl>
     <PackageTags>tools sql csharp query-builder</PackageTags>
