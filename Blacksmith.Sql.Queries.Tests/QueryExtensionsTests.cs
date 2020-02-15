@@ -3,6 +3,7 @@ using Xunit;
 using Blacksmith.Sql.Queries.Extensions;
 using FluentAssertions;
 using System.Linq;
+using Blacksmith.Sql.Queries.Tests.Models;
 
 namespace Blacksmith.Sql.Queries.Tests
 {
@@ -60,7 +61,6 @@ namespace Blacksmith.Sql.Queries.Tests
             query.Pagination.Size.Should().Be(size);
         }
 
-
         [Theory]
         [InlineAutoData]
         public void can_set_query_order(string column, OrderDirection direction)
@@ -74,6 +74,29 @@ namespace Blacksmith.Sql.Queries.Tests
             query.Order.Should().HaveCount(1);
             query.Order.First().Column.Should().Be(column);
             query.Order.First().Direction.Should().Be(direction);
+        }
+
+        [Theory]
+        [InlineAutoData]
+        public void can_set_query_parameters_from_object(Product product)
+        {
+            FakeQuery query;
+
+            query = new FakeQuery().setParameters(product);
+
+            query.Parameters.Should().HaveCount(3);
+            
+            query.Parameters
+                .Single(p => p.ParameterName == nameof(Product.Id))
+                .Value.Should().Be(product.Id);
+            
+            query.Parameters
+                .Single(p => p.ParameterName == nameof(Product.Name))
+                .Value.Should().Be(product.Name);
+            
+            query.Parameters
+                .Single(p => p.ParameterName == nameof(Product.Price))
+                .Value.Should().Be(product.Price);
         }
     }
 }
