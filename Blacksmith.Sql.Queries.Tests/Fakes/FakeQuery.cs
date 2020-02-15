@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Text;
 
 namespace Blacksmith.Sql.Queries.Tests
@@ -26,7 +27,7 @@ namespace Blacksmith.Sql.Queries.Tests
 
         public IDbDataParameter createParameter()
         {
-            throw new NotImplementedException();
+            return new SqlParameter();
         }
     }
 }
