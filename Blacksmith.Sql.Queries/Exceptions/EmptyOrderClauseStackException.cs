@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace Blacksmith.Sql.Queries.MsSql.Exceptions
+namespace Blacksmith.Sql.Queries.Exceptions
 {
     [Serializable]
     public class EmptyOrderClauseStackException : Exception

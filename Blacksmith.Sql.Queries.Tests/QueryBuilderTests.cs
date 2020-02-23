@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using Xunit;
 
-namespace Blacksmith.Sql.Queries.MsSql.Tests
+namespace Blacksmith.Sql.Queries.Tests
 {
     public class QueryBuilderTests
     {

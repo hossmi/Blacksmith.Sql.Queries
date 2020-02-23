@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 
-namespace Blacksmith.Sql.Queries.MsSql
+namespace Blacksmith.Sql.Queries
 {
     public abstract class AbstractSqlStatement : ISqlStatement
     {
