@@ -1,4 +1,4 @@
-﻿using Blacksmith.Sql.Queries.MsSql.Exceptions;
+﻿using Blacksmith.Sql.Queries.Exceptions;
 using Blacksmith.Validations;
 using System;
 using System.Collections;
@@ -7,7 +7,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 
-namespace Blacksmith.Sql.Queries.MsSql
+namespace Blacksmith.Sql.Queries
 {
     public abstract class AbstractSqlQuery : IFilterableQuery, IPaginableQuery, IOrderedQuery
     {

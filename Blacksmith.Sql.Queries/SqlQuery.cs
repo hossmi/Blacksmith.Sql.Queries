@@ -1,6 +1,6 @@
 ﻿using System.Data;
 
-namespace Blacksmith.Sql.Queries.MsSql
+namespace Blacksmith.Sql.Queries
 {
     public class SqlQuery<TdbParameter> : AbstractSqlQuery where TdbParameter : IDbDataParameter, new()
     {
